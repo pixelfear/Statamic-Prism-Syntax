@@ -1,17 +1,17 @@
 Prism.languages.statamic = Prism.languages.extend('markup', {
 	
 	'statamic-tag': {
-		pattern: /\{\{.*\}\}/g,
+		pattern: /\{\{[^]*?\}\}/gm,
 		inside: {
 			'attr-value': {
-				pattern: /="\w+"/,
+				pattern: /=\s*"(\w+|\s+|\/)+"/,
 				inside: {
 					'punctuation': /=|&gt;|"/g
 				}
 			},
 			'punctuation': /\{\{\s?\/?|\}\}/,
 			'plugin-name': {
-				pattern: /^\w+:\w+/,
+				pattern: /^\s*\w+:\w+/,
 				inside: {
 					'class': /\w+(?=:)/,
 					'colon': /:/,
