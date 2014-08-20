@@ -1,3 +1,3 @@
 # Statamic Prism Syntax
 
-This syntax is an extension of the markup (HTML) syntax. You'll need to have that installed for this to work.
+If you like to use [Prism](http://prismjs.com/) (you should) and [Statamic](http://statamic.com/) (you should), and you need code highlighted – here you go.

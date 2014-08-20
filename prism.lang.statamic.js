@@ -1,4 +1,6 @@
-Prism.languages.statamic = Prism.languages.extend('markup', {
+Prism.languages.statamic = {
+
+	'comment': /\{\{#[\w\W]*?#\}\}/g,
 	
 	'statamic-tag': {
 		pattern: /\{\{[^]*?\}\}/gm,
@@ -22,6 +24,11 @@ Prism.languages.statamic = Prism.languages.extend('markup', {
 			'keyword': /(if|else|elseif|endif|unless)/g,
 			'attr-name': /\w+/
 		}
+	},
+
+	'other': {
+		pattern: /[\s\S]*/,
+		inside: Prism.languages.markup
 	}
 
-});
+};
