@@ -6,7 +6,7 @@ If you like to use [Prism](http://prismjs.com/) (you should) and [Statamic](http
 
 Load Prism and the language file – either by separate files or by your own build process like Grunt or Gulp.
 
-```markup
+```html
 <script src="prism.js"></script>
 <script src="prism.lang.statamic.js"></script>
 ```
